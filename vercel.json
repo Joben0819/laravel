@@ -2,8 +2,12 @@
     "version": 2,
     "builds": [
       {
-        "src": "Dockerfile",
-        "use": "@vercel/docker"
+        "src": "public/**",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "composer.json",
+        "use": "@vercel/php"
       }
     ],
     "routes": [
